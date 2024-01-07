@@ -1,0 +1,100 @@
+.project-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  align-items: center;
+
+  background-color: var(--primary-dark);
+  /* border: solid 3px white; */
+  border-radius: 5px;
+  margin: 10px;
+  padding: 40px;
+
+  transition-property: padding;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.project-box:hover {
+    /* box-shadow: 0 0px 10px white; */
+    padding: 45px 50px;
+}
+
+.project-box img {
+  border-radius: 8px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.project-detail {
+  position: relative;
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-detail h6 {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.tag-container {
+  position: absolute;
+  bottom: 45px;
+  display: flex;
+}
+
+.tag {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 15px;
+
+  background-color: var(--accent);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.demo-git {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+
+.demo-git button {
+  color: var(--secondary);
+  border-style: none;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  
+  cursor: pointer;
+
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 15px;
+
+  background-color: var(--accent-dark);
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.description {
+  margin-top: 0;
+  width: 100%;
+  font-size: 18px;
+  overflow-wrap: break-word;
+}

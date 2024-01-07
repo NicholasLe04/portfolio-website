@@ -1,0 +1,35 @@
+.experience-container {
+    width: 70%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.experience-box {
+    background-color: var(--primary-dark);
+    width: 27%;
+
+    border-radius: 5px;
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-box h6 {
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.experience-box .company {
+    font-size: 20px;
+    margin: 0;
+    height: 50px;
+    text-align: center;
+}
+  
+.experience-box .dates {
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
