@@ -17,8 +17,10 @@
     
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
     <div class="Root">
@@ -137,6 +139,34 @@
                 <div class='project-box fade-in'>
                     <div class='project-container'>
                         <div class='project-detail'>
+                            <h6 style="font-weight:500">classify</h6>
+                            <p class='description'>
+                                A web application that allows SJSU students to search for courses with natural language rather than
+                                course code. The semantic search is powered by the sentence-transformers/all-MiniLM-L12-v2 sentence embedding model and the 
+                                Zilliz Vector Database. The frontend is hosted on Vercel and the backend is hosted on Render.
+                            </p>
+                            <div class='tag-container'>
+                                <div class='tag'>javascript</div>
+                                <div class='tag'>python</div>
+                                <div class='tag'>react</div>
+                                <div class='tag'>fastapi</div>
+                                <div class='tag'>docker</div>
+                                <div class='tag'>web scraping</div>
+                            </div>
+                            <div class='demo-git'>
+                                <a href="https://classify.nicholasle.me" target="_blank"><button>view demo</button></a>
+                                <a href="https://github.com/nicholasle04/classify" target="_blank"><button>view github</button></a>
+                            </div>
+                        </div>
+                        <img src="./assets/images/classify.png" height="250px" width="444px">
+                    </div>
+                </div>
+            </div>
+            <!-- PROJECT -->
+            <div class='project-box-container'>
+                <div class='project-box fade-in'>
+                    <div class='project-container'>
+                        <div class='project-detail'>
                             <h6 style="font-weight:500">sce tv</h6>
                             <p class='description'>
                                 SCE TV allows members of SCE to remotely play YouTube videos on the clubroom TV. It uses a Raspberry Pi to receive an RTMP
@@ -204,7 +234,6 @@
                                 <div class='tag'>express</div>
                                 <div class='tag'>react</div>
                                 <div class='tag'>node</div>
-                                <div class='tag'>vercel</div>
                             </div>
                             <div class='demo-git'>
                                 <a href="https://uniplan.nicholasle.me" target="_blank"><button>view demo</button></a>
@@ -234,7 +263,6 @@
                                 <div class='tag'>sql</div>
                                 <div class='tag'>react</div>
                                 <div class='tag'>fastapi</div>
-                                <div class='tag'>cockroachdb</div>
                             </div>
                             <div class='demo-git'>
                                 <a><button class="inactive" disabled>view demo</button></a>
