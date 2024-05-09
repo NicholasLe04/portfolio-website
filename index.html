@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicholas Le</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
     <!-- <link rel="stylesheet" href="./assets/css/Fonts.css"> -->
     <!-- <link rel="stylesheet" href="./assets/css/index.css"> -->
     <!-- <link rel="stylesheet" href="./assets/css/Home.css">
@@ -24,8 +24,8 @@
     <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
-    <div class="bg-gray-900 font-sans text-white font-normal">
-        <header class="flex fixed top-0 w-screen justify-between items-center h-20 py-1 px-8 bg-gradient-to-t from-transparent to-gray-900">
+    <div class="bg-neutral-900 font-sans text-white font-normal">
+        <header class="flex fixed top-0 w-screen justify-between items-center h-20 py-1 px-8 bg-gradient-to-t from-transparent to-neutral-900">
             <span class="font-medium text-4xl">nle</span>
           <ul class="flex invisible sm:visible float-right font-light text-xl m-0 p-0">
             <li><a class="ml-4" href='#experience'>experience</a></li>
@@ -35,255 +35,312 @@
           </ul>
         </header>
         <div class="flex flex-col pt-20 w-screen h-screen justify-center items-center" id="home">
-            <p class="text-4xl drop-in">Hello, I am <span class="text-blue-500">Nicholas</span></p>
+            <p class="text-4xl mb-4">Hello, I am <span class="text-blue-500">Nicholas</span></p>
             <div class="flex">
                 <a href="./assets/Nicholas Le Resume.pdf" target="_blank"><img src="./assets/images/resume.png" width="36px"></a>
                 <a href="https://linkedin.com/in/nicholasle04" target="_blank"><img src="./assets/images/linkedin.png" width="36px"></a>
                 <a href="https://github.com/nicholasle04" target="_blank"><img src="./assets/images/github.png" width="36px"></a>
             </div>
         </div>
-        <div class="w-screen px-20" id="projects">
-            <p>projects</p>
+        <div class="w-screen px-10 sm:px-20" id="projects">
+            <p class="font-normal text-3xl mb-4">projects</p>
             <!-- PROJECT -->
-            <div class='project-box-container'>
-                <div class='project-box fade-in'>
-                    <div class='project-container'>
-                        <div class='project-detail'>
-                            <h6 style="font-weight:500">WeenVerse</h6>
-                            <p class='description'>
-                                A custom web application built for famous streamer JasonTheWeen's community. With over 3,500 users, WeenVerse is a 
-                                platform that allows users to convert their Twitch channel points into a virtual currency called WeenBucks. Users can 
-                                then use their WeenBucks for various community-based actions. Key features include trading shares from a mock stock market and
-                                placing bets on events in future streams.
-                            </p>
-                            <div class='tag-container'>
-                                <div class='tag'>typescript</div>
-                                <div class='tag'>python</div>
-                                <div class='tag'>sql</div>
-                                <div class='tag'>sveltekit</div>
-                                <div class='tag'>supabase</div>
-                                <div class='tag'>redis</div>
-                                <div class='tag'>docker</div>
-                            </div>
-                            <div class='demo-git'>
-                                <a><button class="inactive" disabled>demo coming soon</button></a>
-                                <a><button class="inactive" disabled>view github</button></a>
-                            </div>
-                        </div>
-                        <img src="./assets/images/classify.png" height="250px" width="444px">
-                    </div>
-                </div>
-            </div>
-            <div class='project-box-container'>
-                <div class='project-box fade-in'>
-                    <div class='project-container'>
-                        <div class='project-detail'>
-                            <h6 style="font-weight:500">classify</h6>
-                            <p class='description'>
-                                A web application that allows SJSU students to search for courses with natural language rather than
-                                course code. The semantic search is powered by the sentence-transformers/all-MiniLM-L12-v2 sentence embedding model and the 
-                                Zilliz Vector Database. The frontend is hosted on Vercel and the backend is self hosted on my Raspberry Pi home server.
-                            </p>
-                            <div class='tag-container'>
-                                <div class='tag'>javascript</div>
-                                <div class='tag'>python</div>
-                                <div class='tag'>react</div>
-                                <div class='tag'>fastapi</div>
-                                <div class='tag'>docker</div>
-                                <div class='tag'>nginx</div>
-                                <div class='tag'>web scraping</div>
-                            </div>
-                            <div class='demo-git'>
-                                <a href="https://classify.nicholasle.me" target="_blank"><button>view demo</button></a>
-                                <a href="https://github.com/nicholasle04/classify" target="_blank"><button>view github</button></a>
+            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
+                <div class='flex flex-col itmes-center'>
+                    <div class='flex flex-wrap justify-between'>
+                        <div class='flex-shrink w-full xl:w-7/12'>
+                            <div class="flex flex-col justify-between h-full">
+                                <div>
+                                    <h6 class="font-medium text-2xl mb-4">weenverse</h6>
+                                    <p class='mb-4'>
+                                        A custom web application built for famous streamer JasonTheWeen's community. With over 3,500 users, WeenVerse is a 
+                                        platform that allows users to convert their Twitch channel points into a virtual currency called WeenBucks. Users can 
+                                        then use their WeenBucks for various community-based actions. Key features include trading shares from a mock stock market and
+                                        placing bets on events in future streams.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class='flex flex-wrap'>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>typescript</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>sql</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>sveltekit</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>supabase</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>redis</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>docker</div>
+                                    </div>
+                                    <div>
+                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>demo coming soon</button></a>
+                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>view github</button></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <img src="./assets/images/classify.png" height="250px" width="444px">
+                        <img src="./assets/images/classify.png" class="w-full xl:w-1/3 max-w-full object-contain">
                     </div>
                 </div>
             </div>
             <!-- PROJECT -->
-            <div class='project-box-container'>
-                <div class='project-box fade-in'>
-                    <div class='project-container'>
-                        <div class='project-detail'>
-                            <h6 style="font-weight:500">sce tv</h6>
-                            <p class='description'>
-                                SCE TV allows members of SCE to remotely play YouTube videos on the clubroom TV. It uses a Raspberry Pi to receive an RTMP
-                                broadcast via VLC Media Player and a FastAPI server that manages the video stream. Users communicate with the backend
-                                via a simple HTML page and HTTP requests. The backend is deployed on a server using Docker and monitored with Prometheus.
-                            </p>
-                            <div class='tag-container'>
-                                <div class='tag'>html</div>
-                                <div class='tag'>css</div>
-                                <div class='tag'>javascript</div>
-                                <div class='tag'>python</div>
-                                <div class='tag'>fastapi</div>
-                                <div class='tag'>docker</div>
-                                <div class='tag'>prometheus</div>
-                            </div>
-                            <div class='demo-git'>
-                                <a><button class="inactive" disabled>view demo</button></a>
-                                <a href="https://github.com/sce-development/sce-tv" target="_blank"><button>view github</button></a>
+            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
+                <div class='flex flex-col itmes-center'>
+                    <div class='flex flex-wrap justify-between'>
+                        <div class='flex-shrink w-full xl:w-7/12'>
+                            <div class="flex flex-col justify-between h-full">
+                                <div>
+                                    <h6 class="font-medium text-2xl mb-4">classify</h6>
+                                    <p class='mb-4'>
+                                        A web application that allows SJSU students to search for courses with natural language rather than course code. 
+                                        The semantic search is powered by the sentence-transformers/all-MiniLM-L12-v2 sentence embedding model and the 
+                                        Zilliz Vector Database. The frontend is hosted on Vercel and the backend is self hosted on my Raspberry Pi home server.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class='flex flex-wrap'>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>react</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>fastapi</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>docker</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>nginx</div>
+                                    </div>
+                                    <div>
+                                        <a href="https://classify.nicholasle.me" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view demo</button></a>
+                                        <a href="https://github.com/nicholasle04/classify" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <img src="./assets/images/scetv.png" height="250px" width="444px">
+                        <img src="./assets/images/classify.png" class="w-full xl:w-1/3 max-w-full object-contain">
                     </div>
                 </div>
             </div>
             <!-- PROJECT -->
-            <div class='project-box-container'>
-                <div class='project-box fade-in'>
-                    <div class='project-container'>
-                        <div class='project-detail'>
-                            <h6 style="font-weight:500">moogle gaps</h6>
-                            <p class='description'>
-                                A React web application that allows users to build out their own maps and run different pathfinding algorithms.
-                            </p>
-                            <div class='tag-container'>
-                                <div class='tag'>html</div>
-                                <div class='tag'>css</div>
-                                <div class='tag'>javascript</div>
-                                <div class='tag'>react</div>
-                            </div>
-                            <div class='demo-git'>
-                                <a href="https://maps.nicholasle.me" target="_blank"><button>view demo</button></a>
-                                <a href="https://github.com/nicholasle04/moogle-gaps" target="_blank"><button>view github</button></a>
+            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
+                <div class='flex flex-col itmes-center'>
+                    <div class='flex flex-wrap justify-between'>
+                        <div class='flex-shrink w-full xl:w-7/12'>
+                            <div class="flex flex-col justify-between h-full">
+                                <div>
+                                    <h6 class="font-medium text-2xl mb-4">sce tv</h6>
+                                    <p class='mb-4'>
+                                        SCE TV allows members of SCE to remotely play YouTube videos on the clubroom TV. It uses a Raspberry Pi to receive an RTMP
+                                        broadcast via VLC Media Player and a FastAPI server that manages the video stream. Users communicate with the backend
+                                        via a simple HTML page and HTTP requests. The backend is deployed on a server using Docker and monitored with Prometheus.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class='flex flex-wrap'>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>html</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>css</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>fastapi</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>docker</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>prometheus</div>
+                                    </div>
+                                    <div>
+                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>demo coming soon</button></a>
+                                        <a href="https://github.com/sce-development/sce-tv" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <img src="./assets/images/moogle-gaps.png" height="250px" width="444px">
+                        <img src="./assets/images/scetv.png" class="w-full xl:w-1/3 max-w-full object-contain">
                     </div>
                 </div>
             </div>
             <!-- PROJECT -->
-            <div class='project-box-container'>
-                <div class='project-box fade-in'>
-                    <div class='project-container'>
-                        <div class='project-detail'>
-                            <h6 style="font-weight:500">uniplan calendar</h6>
-                            <p class='description'>
-                                A full stack web application built on the the MERN tech stack that allows users to schedule events. Users can create individual accounts 
-                                allowing them to manage their own custom events which includes quick and easy event creation and deletion. Users can
-                                also quickly switch between different timeframes (day, week, month) to conveniently view events. 
-                            </p>
-                            <div class='tag-container'>
-                                <div class='tag'>html</div>
-                                <div class='tag'>css</div>
-                                <div class='tag'>javascript</div>
-                                <div class='tag'>mongodb</div>
-                                <div class='tag'>express</div>
-                                <div class='tag'>react</div>
-                                <div class='tag'>node</div>
-                            </div>
-                            <div class='demo-git'>
-                                <a href="https://uniplan.nicholasle.me" target="_blank"><button>view demo</button></a>
-                                <a href="https://github.com/nicholasle04/calendar-app" target="_blank"><button>view github</button></a>
-                            </div>
-                        </div>
-                        <img src="./assets/images/uniplan.png" height="250px" width="444px">
-                    </div>
-                </div>
-            </div>      
-            <!-- PROJECT -->
-            <div class='project-box-container'>
-                <div class='project-box fade-in'>
-                    <div class='project-container'>
-                        <div class='project-detail'>
-                            <h6 style="font-weight:500">skilltree</h6>
-                            <p class='description'>
-                                A platform to create and view just skilltrees. Users who are familiar with a particular 
-                                skill can build and submit their own tree, using their real-world experience to inform their decisions on how the 
-                                tree is structured. Or, they can use generative AI to build a skilltree for them, either as a base to improve on or just to explore!
-                            </p>
-                            <div class='tag-container'>
-                                <div class='tag'>html</div>
-                                <div class='tag'>css</div>
-                                <div class='tag'>javascript</div>
-                                <div class='tag'>sql</div>
-                                <div class='tag'>react</div>
-                                <div class='tag'>fastapi</div>
-                            </div>
-                            <div class='demo-git'>
-                                <a><button class="inactive" disabled>view demo</button></a>
-                                <a href="https://github.com/nicholasle04/skilltree" target="_blank"><button>view github</button></a>
+            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
+                <div class='flex flex-col itmes-center'>
+                    <div class='flex flex-wrap justify-between'>
+                        <div class='flex-shrink w-full xl:w-7/12'>
+                            <div class="flex flex-col justify-between h-full">
+                                <div>
+                                    <h6 class="font-medium text-2xl mb-4">moogle gaps</h6>
+                                    <p class='mb-4'>
+                                        A React web application that allows users to build out their own maps and run different pathfinding algorithms.
+                                        Users can create roads and buildings and find paths between two points on the map. Buildings can be set as obstacles
+                                        and can create traffic on nearby roads.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class='flex flex-wrap'>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>html</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>css</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>react</div>
+                                    </div>
+                                    <div>
+                                        <a href="https://maps.nicholasle.me" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view demo</button></a>
+                                        <a href="https://github.com/nicholasle04/moogle-gaps" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <img src="./assets/images/skilltree.png" height="250px" width="444px">
+                        <img src="./assets/images/moogle-gaps.png" class="w-full xl:w-1/3 max-w-full object-contain">
                     </div>
                 </div>
             </div>
             <!-- PROJECT -->
-            <div class='project-box-container'>
-                <div class='project-box fade-in'>
-                    <div class='project-container'>
-                        <div class='project-detail'>
-                            <h6 style="font-weight:500">blockfish</h6>
-                            <p class='description'>
-                                A basic chess engine with its name derived from the infamous Stockfish engine. Blockfish uses the minimax
-                                algorithm to examine future possibilities and determine the best move at a particular position. Some optimizations that have
-                                been implemented to improve search speeds are alpha-beta pruning, move ordering, zobrist hashing, and memoization.
-                            </p>
-                            <div class='tag-container'>
-                                <div class='tag'>python</div>
-                                <div class='tag'>fastapi</div>
-                                <div class='tag'>react</div>
-                            </div>
-                            <div class='demo-git'>
-                                <a><button class="inactive" disabled>view demo</button></a>
-                                <a href="https://github.com/nicholasle04/blockfish" target="_blank"><button>view github</button></a>
+            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
+                <div class='flex flex-col itmes-center'>
+                    <div class='flex flex-wrap justify-between'>
+                        <div class='flex-shrink w-full xl:w-7/12'>
+                            <div class="flex flex-col justify-between h-full">
+                                <div>
+                                    <h6 class="font-medium text-2xl mb-4">uniplan calendar</h6>
+                                    <p class='mb-4'>
+                                        A full stack web application built on the the MERN tech stack that allows users to schedule events. Users can create individual accounts 
+                                        allowing them to manage their own custom events which includes quick and easy event creation and deletion. Users can
+                                        also quickly switch between different timeframes (day, week, month) to conveniently view events. 
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class='flex flex-wrap'>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>html</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>css</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>react</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>mongodb</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>node</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>express</div>
+                                    </div>
+                                    <div>
+                                        <a href="https://uniplan.nicholasle.me" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view demo</button></a>
+                                        <a href="https://github.com/nicholasle04/calendar-app" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <img src="./assets/images/blockfish.png" height="250px" width="444px">
+                        <img src="./assets/images/uniplan.png" class="w-full xl:w-1/3 max-w-full object-contain">
                     </div>
                 </div>
             </div>
             <!-- PROJECT -->
-            <div class='project-box-container'>
-                <div class='project-box fade-in'>
-                    <div class='project-container'>
-                        <div class='project-detail'>
-                            <h6 style="font-weight:500">valorant stats discord bot</h6>
-                            <p class='description'>
-                                A Discord bot that allows users to search Valorant esports player and team statistics. The application regularly scrapes multiple
-                                esports stats pages and updates a local mysql table with relevant information. Using Discord's bot API, it allows users to 
-                                communicate with the application and request information via bot commands.
-                            </p>
-                            <div class='tag-container'>
-                                <div class='tag'>python</div>
-                                <div class='tag'>aws</div>
-                                <div class='tag'>mysql</div>
-                                <div class='tag'>web scraping</div>
-                            </div>
-                            <div class='demo-git'>
-                                <a><button class="inactive" disabled>view demo</button></a>
-                                <a><button class="inactive" disabled>view github</button></a>
+            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
+                <div class='flex flex-col itmes-center'>
+                    <div class='flex flex-wrap justify-between'>
+                        <div class='flex-shrink w-full xl:w-7/12'>
+                            <div class="flex flex-col justify-between h-full">
+                                <div>
+                                    <h6 class="font-medium text-2xl mb-4">skilltree</h6>
+                                    <p class='mb-4'>
+                                        A platform to create and view just skilltrees. Users who are familiar with a particular 
+                                        skill can build and submit their own tree, using their real-world experience to inform their decisions on how the 
+                                        tree is structured. Or, they can use generative AI to build a skilltree for them, either as a base to improve on or just to explore!
+                                        Developed at Calhacks 10.0.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class='flex flex-wrap'>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>html</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>css</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>sql</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>react</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>fastapi</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>cockroachdb</div>
+                                    </div>
+                                    <div>
+                                        <a href="https://uniplan.nicholasle.me" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view demo</button></a>
+                                        <a href="https://github.com/nicholasle04/calendar-app" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <img src="./assets/images/vct bot.png" height="250px" width="444px">
+                        <img src="./assets/images/uniplan.png" class="w-full xl:w-1/3 max-w-full object-contain">
                     </div>
                 </div>
             </div>
             <!-- PROJECT -->
-            <div class='project-box-container'>
-                <div class='project-box fade-in'>
-                    <div class='project-container'>
-                        <div class='project-detail'>
-                            <h6 style="font-weight:500">portfolio website</h6>
-                            <p class='description'>
-                                A portfolio website to present myself to the internet :)
-                            </p>
-                            <div class='tag-container'>
-                                <div class='tag'>html</div>
-                                <div class='tag'>css</div>
-                                <div class='tag'>javascript</div>
-                                <div class='tag'>vercel</div>
-                            </div>
-                            <div class='demo-git'>
-                                <a href="https://nicholasle.me" target="_blank"><button>view demo</button></a>
-                                <a href="https://github.com/nicholasle04/portfolio-website" target="_blank"><button>view github</button></a>
+            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
+                <div class='flex flex-col itmes-center'>
+                    <div class='flex flex-wrap justify-between'>
+                        <div class='flex-shrink w-full xl:w-7/12'>
+                            <div class="flex flex-col justify-between h-full">
+                                <div>
+                                    <h6 class="font-medium text-2xl mb-4">blockfish</h6>
+                                    <p class='mb-4'>
+                                        A basic chess engine with its name derived from the infamous Stockfish engine. Blockfish uses the minimax algorithm to examine 
+                                        future positions and determine the best move at a particular position. Optimizations include alpha-beta pruning, move ordering, zobrist hashing, 
+                                        and memoization.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class='flex flex-wrap'>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
+                                    </div>
+                                    <div>
+                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>view demo</button></a>
+                                        <a href="https://github.com/nicholasle04/blockfish" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <img src="./assets/images/portfolio.png" height="250px" width="444px">
+                        <img src="./assets/images/blockfish.png" class="w-full xl:w-1/3 max-w-full object-contain">
+                    </div>
+                </div>
+            </div>
+            <!-- PROJECT -->
+            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
+                <div class='flex flex-col itmes-center'>
+                    <div class='flex flex-wrap justify-between'>
+                        <div class='flex-shrink w-full xl:w-7/12'>
+                            <div class="flex flex-col justify-between h-full">
+                                <div>
+                                    <h6 class="font-medium text-2xl mb-4">vct stats discord bot</h6>
+                                    <p class='mb-4'>
+                                        A Discord bot that allows users to search esports player and team statistics within the Valorant Champions Tour. 
+                                        The application regularly scrapes multiple esports stats pages and updates a local mysql table with relevant 
+                                        information. Using Discord.py, it allows users to communicate with the application and request information 
+                                        via bot commands within servers.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class='flex flex-wrap'>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>aws ec2</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>mysql</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>beautifulsoup</div>
+                                    </div>
+                                    <div>
+                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>view demo</button></a>
+                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>view github</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/images/blockfish.png" class="w-full xl:w-1/3 max-w-full object-contain">
+                    </div>
+                </div>
+            </div>
+            <!-- PROJECT -->
+            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
+                <div class='flex flex-col itmes-center'>
+                    <div class='flex flex-wrap justify-between'>
+                        <div class='flex-shrink w-full xl:w-7/12'>
+                            <div class="flex flex-col justify-between h-full">
+                                <div>
+                                    <h6 class="font-medium text-2xl mb-4">portfolio website</h6>
+                                    <p class='mb-4'>
+                                        A portfolio website to present myself to the internet :)
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class='flex flex-wrap'>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>html</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
+                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>tailwind</div>
+                                    </div>
+                                    <div>
+                                        <a href="https://nicholasle.me" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view demo</button></a>
+                                        <a href="https://github.com/nicholasle04/portfolio-website" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/images/portfolio.png" class="w-full xl:w-1/3 max-w-full object-contain">
                     </div>
                 </div>
             </div>
