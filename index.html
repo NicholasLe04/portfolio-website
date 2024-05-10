@@ -1,455 +1,1096 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicholas Le</title>
-    <link rel="stylesheet" href="./output.css">
-    <!-- <link rel="stylesheet" href="./assets/css/Fonts.css"> -->
-    <!-- <link rel="stylesheet" href="./assets/css/index.css"> -->
-    <!-- <link rel="stylesheet" href="./assets/css/Home.css">
-    <link rel="stylesheet" href="./assets/css/Page.css">
-    <link rel="stylesheet" href="./assets/css/Projects.css">
-    <link rel="stylesheet" href="./assets/css/Skills.css">
-    <link rel="stylesheet" href="./assets/css/App.css">
-    <link rel="stylesheet" href="./assets/css/Experience.css">
-    <link rel="stylesheet" href="./assets/css/Contact.css"> -->
+<html class="scroll-smooth" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nicholas Le</title>
+        <link rel="stylesheet" href="./output.css" />
 
-    
-    <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
-    <script defer src="/_vercel/speed-insights/script.js"></script>
-</head>
-<body>
-    <div class="bg-neutral-900 font-sans text-white font-normal">
-        <header class="flex fixed top-0 w-screen justify-between items-center h-20 py-1 px-8 bg-gradient-to-t from-transparent to-neutral-900">
-            <span class="font-medium text-4xl">nle</span>
-          <ul class="flex invisible sm:visible float-right font-light text-xl m-0 p-0">
-            <li><a class="ml-4" href='#experience'>experience</a></li>
-            <li><a class="ml-4" href='#skills'>skills</a></li>
-            <li><a class="ml-4" href='#projects'>projects</a></li>
-            <li><a class="ml-4" href='#contact'>contact</a></li>
-          </ul>
-        </header>
-        <div class="flex flex-col pt-20 w-screen h-screen justify-center items-center" id="home">
-            <p class="text-4xl mb-4">Hello, I am <span class="text-blue-500">Nicholas</span></p>
-            <div class="flex">
-                <a href="./assets/Nicholas Le Resume.pdf" target="_blank"><img src="./assets/images/resume.png" width="36px"></a>
-                <a href="https://linkedin.com/in/nicholasle04" target="_blank"><img src="./assets/images/linkedin.png" width="36px"></a>
-                <a href="https://github.com/nicholasle04" target="_blank"><img src="./assets/images/github.png" width="36px"></a>
-            </div>
-        </div>
-        <div class="w-screen px-10 sm:px-20" id="projects">
-            <p class="font-normal text-3xl mb-4">projects</p>
-            <!-- PROJECT -->
-            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
-                <div class='flex flex-col itmes-center'>
-                    <div class='flex flex-wrap justify-between'>
-                        <div class='flex-shrink w-full xl:w-7/12'>
-                            <div class="flex flex-col justify-between h-full">
-                                <div>
-                                    <h6 class="font-medium text-2xl mb-4">weenverse</h6>
-                                    <p class='mb-4'>
-                                        A custom web application built for famous streamer JasonTheWeen's community. With over 3,500 users, WeenVerse is a 
-                                        platform that allows users to convert their Twitch channel points into a virtual currency called WeenBucks. Users can 
-                                        then use their WeenBucks for various community-based actions. Key features include trading shares from a mock stock market and
-                                        placing bets on events in future streams.
-                                    </p>
-                                </div>
-                                <div>
-                                    <div class='flex flex-wrap'>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>typescript</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>sql</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>sveltekit</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>supabase</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>redis</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>docker</div>
-                                    </div>
-                                    <div>
-                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>demo coming soon</button></a>
-                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>view github</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/images/classify.png" class="w-full xl:w-1/3 max-w-full object-contain">
-                    </div>
-                </div>
-            </div>
-            <!-- PROJECT -->
-            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
-                <div class='flex flex-col itmes-center'>
-                    <div class='flex flex-wrap justify-between'>
-                        <div class='flex-shrink w-full xl:w-7/12'>
-                            <div class="flex flex-col justify-between h-full">
-                                <div>
-                                    <h6 class="font-medium text-2xl mb-4">classify</h6>
-                                    <p class='mb-4'>
-                                        A web application that allows SJSU students to search for courses with natural language rather than course code. 
-                                        The semantic search is powered by the sentence-transformers/all-MiniLM-L12-v2 sentence embedding model and the 
-                                        Zilliz Vector Database. The frontend is hosted on Vercel and the backend is self hosted on my Raspberry Pi home server.
-                                    </p>
-                                </div>
-                                <div>
-                                    <div class='flex flex-wrap'>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>react</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>fastapi</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>docker</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>nginx</div>
-                                    </div>
-                                    <div>
-                                        <a href="https://classify.nicholasle.me" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view demo</button></a>
-                                        <a href="https://github.com/nicholasle04/classify" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/images/classify.png" class="w-full xl:w-1/3 max-w-full object-contain">
-                    </div>
-                </div>
-            </div>
-            <!-- PROJECT -->
-            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
-                <div class='flex flex-col itmes-center'>
-                    <div class='flex flex-wrap justify-between'>
-                        <div class='flex-shrink w-full xl:w-7/12'>
-                            <div class="flex flex-col justify-between h-full">
-                                <div>
-                                    <h6 class="font-medium text-2xl mb-4">sce tv</h6>
-                                    <p class='mb-4'>
-                                        SCE TV allows members of SCE to remotely play YouTube videos on the clubroom TV. It uses a Raspberry Pi to receive an RTMP
-                                        broadcast via VLC Media Player and a FastAPI server that manages the video stream. Users communicate with the backend
-                                        via a simple HTML page and HTTP requests. The backend is deployed on a server using Docker and monitored with Prometheus.
-                                    </p>
-                                </div>
-                                <div>
-                                    <div class='flex flex-wrap'>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>html</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>css</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>fastapi</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>docker</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>prometheus</div>
-                                    </div>
-                                    <div>
-                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>demo coming soon</button></a>
-                                        <a href="https://github.com/sce-development/sce-tv" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/images/scetv.png" class="w-full xl:w-1/3 max-w-full object-contain">
-                    </div>
-                </div>
-            </div>
-            <!-- PROJECT -->
-            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
-                <div class='flex flex-col itmes-center'>
-                    <div class='flex flex-wrap justify-between'>
-                        <div class='flex-shrink w-full xl:w-7/12'>
-                            <div class="flex flex-col justify-between h-full">
-                                <div>
-                                    <h6 class="font-medium text-2xl mb-4">moogle gaps</h6>
-                                    <p class='mb-4'>
-                                        A React web application that allows users to build out their own maps and run different pathfinding algorithms.
-                                        Users can create roads and buildings and find paths between two points on the map. Buildings can be set as obstacles
-                                        and can create traffic on nearby roads.
-                                    </p>
-                                </div>
-                                <div>
-                                    <div class='flex flex-wrap'>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>html</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>css</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>react</div>
-                                    </div>
-                                    <div>
-                                        <a href="https://maps.nicholasle.me" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view demo</button></a>
-                                        <a href="https://github.com/nicholasle04/moogle-gaps" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/images/moogle-gaps.png" class="w-full xl:w-1/3 max-w-full object-contain">
-                    </div>
-                </div>
-            </div>
-            <!-- PROJECT -->
-            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
-                <div class='flex flex-col itmes-center'>
-                    <div class='flex flex-wrap justify-between'>
-                        <div class='flex-shrink w-full xl:w-7/12'>
-                            <div class="flex flex-col justify-between h-full">
-                                <div>
-                                    <h6 class="font-medium text-2xl mb-4">uniplan calendar</h6>
-                                    <p class='mb-4'>
-                                        A full stack web application built on the the MERN tech stack that allows users to schedule events. Users can create individual accounts 
-                                        allowing them to manage their own custom events which includes quick and easy event creation and deletion. Users can
-                                        also quickly switch between different timeframes (day, week, month) to conveniently view events. 
-                                    </p>
-                                </div>
-                                <div>
-                                    <div class='flex flex-wrap'>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>html</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>css</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>react</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>mongodb</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>node</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>express</div>
-                                    </div>
-                                    <div>
-                                        <a href="https://uniplan.nicholasle.me" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view demo</button></a>
-                                        <a href="https://github.com/nicholasle04/calendar-app" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/images/uniplan.png" class="w-full xl:w-1/3 max-w-full object-contain">
-                    </div>
-                </div>
-            </div>
-            <!-- PROJECT -->
-            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
-                <div class='flex flex-col itmes-center'>
-                    <div class='flex flex-wrap justify-between'>
-                        <div class='flex-shrink w-full xl:w-7/12'>
-                            <div class="flex flex-col justify-between h-full">
-                                <div>
-                                    <h6 class="font-medium text-2xl mb-4">skilltree</h6>
-                                    <p class='mb-4'>
-                                        A platform to create and view just skilltrees. Users who are familiar with a particular 
-                                        skill can build and submit their own tree, using their real-world experience to inform their decisions on how the 
-                                        tree is structured. Or, they can use generative AI to build a skilltree for them, either as a base to improve on or just to explore!
-                                        Developed at Calhacks 10.0.
-                                    </p>
-                                </div>
-                                <div>
-                                    <div class='flex flex-wrap'>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>html</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>css</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>sql</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>react</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>fastapi</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>cockroachdb</div>
-                                    </div>
-                                    <div>
-                                        <a href="https://uniplan.nicholasle.me" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view demo</button></a>
-                                        <a href="https://github.com/nicholasle04/calendar-app" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/images/uniplan.png" class="w-full xl:w-1/3 max-w-full object-contain">
-                    </div>
-                </div>
-            </div>
-            <!-- PROJECT -->
-            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
-                <div class='flex flex-col itmes-center'>
-                    <div class='flex flex-wrap justify-between'>
-                        <div class='flex-shrink w-full xl:w-7/12'>
-                            <div class="flex flex-col justify-between h-full">
-                                <div>
-                                    <h6 class="font-medium text-2xl mb-4">blockfish</h6>
-                                    <p class='mb-4'>
-                                        A basic chess engine with its name derived from the infamous Stockfish engine. Blockfish uses the minimax algorithm to examine 
-                                        future positions and determine the best move at a particular position. Optimizations include alpha-beta pruning, move ordering, zobrist hashing, 
-                                        and memoization.
-                                    </p>
-                                </div>
-                                <div>
-                                    <div class='flex flex-wrap'>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
-                                    </div>
-                                    <div>
-                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>view demo</button></a>
-                                        <a href="https://github.com/nicholasle04/blockfish" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/images/blockfish.png" class="w-full xl:w-1/3 max-w-full object-contain">
-                    </div>
-                </div>
-            </div>
-            <!-- PROJECT -->
-            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
-                <div class='flex flex-col itmes-center'>
-                    <div class='flex flex-wrap justify-between'>
-                        <div class='flex-shrink w-full xl:w-7/12'>
-                            <div class="flex flex-col justify-between h-full">
-                                <div>
-                                    <h6 class="font-medium text-2xl mb-4">vct stats discord bot</h6>
-                                    <p class='mb-4'>
-                                        A Discord bot that allows users to search esports player and team statistics within the Valorant Champions Tour. 
-                                        The application regularly scrapes multiple esports stats pages and updates a local mysql table with relevant 
-                                        information. Using Discord.py, it allows users to communicate with the application and request information 
-                                        via bot commands within servers.
-                                    </p>
-                                </div>
-                                <div>
-                                    <div class='flex flex-wrap'>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>python</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>aws ec2</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>mysql</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>beautifulsoup</div>
-                                    </div>
-                                    <div>
-                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>view demo</button></a>
-                                        <a><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50" disabled>view github</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/images/blockfish.png" class="w-full xl:w-1/3 max-w-full object-contain">
-                    </div>
-                </div>
-            </div>
-            <!-- PROJECT -->
-            <div class='bg-neutral-800 mb-4 px-8 sm:px-16 py-8 rounded-xl'>
-                <div class='flex flex-col itmes-center'>
-                    <div class='flex flex-wrap justify-between'>
-                        <div class='flex-shrink w-full xl:w-7/12'>
-                            <div class="flex flex-col justify-between h-full">
-                                <div>
-                                    <h6 class="font-medium text-2xl mb-4">portfolio website</h6>
-                                    <p class='mb-4'>
-                                        A portfolio website to present myself to the internet :)
-                                    </p>
-                                </div>
-                                <div>
-                                    <div class='flex flex-wrap'>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>html</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>javascript</div>
-                                        <div class='bg-blue-500 py-1 px-4 mr-2 mb-4 rounded'>tailwind</div>
-                                    </div>
-                                    <div>
-                                        <a href="https://nicholasle.me" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view demo</button></a>
-                                        <a href="https://github.com/nicholasle04/portfolio-website" target="_blank"><button class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded">view github</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/images/portfolio.png" class="w-full xl:w-1/3 max-w-full object-contain">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="page" id="experience">
-            <p class="fade-in">experience</p>
-            <div class="experience-container">
-                <div class="experience-box">
-                    <h6 style="font-weight:500">Development Team Officer</h6>
-                    <p class="company">SJSU Software & Computer Engineering Society</p>
-                    <p class="dates">March 2023 &mdash; Present</p>
-                    <img src="./assets/images/sce-logo.png" width="40%">
-                </div>
-                <div class="experience-box">
-                    <h6 style="font-weight:500">Controls Team Member</h6>
-                    <p class="company">SJSU Cube3 Satellite Club</p>
-                    <p class="dates">Feb. 2023 &mdash; Present</p>
-                    <img src="./assets/images/cube3-logo.webp" width="40%">
-                </div>
-                <div class="experience-box">
-                    <h6 style="font-weight:500">IT Technician I</h6>
-                    <p class="company">Corovan</p>
-                    <p class="dates">June 2023 &mdash; Aug. 2023</p>
-                    <img src="./assets/images/corovan-logo.png" width="40%">
-                </div>
-            </div>
-        </div>
-        <div class="page" id="skills">
-            <p>skills</p>
-            <div id="skill-table">
-                <ul>
-                    <li>
-                        html
-                        <img src="./assets/images/html-logo.png" height="32px">
-                    </li>
-                    <li>
-                        css
-                        <img src="./assets/images/css-logo.png" height="32px">
-                    </li>
-                    <li>
-                        javascript
-                        <img src="./assets/images/js-logo.png" height="32px">
-                    </li>
-                    <li>
-                        git
-                        <img src="./assets/images/git-logo.png" height="32px">
-                    </li>
+        <script>
+            window.va =
+                window.va ||
+                function () {
+                    (window.vaq = window.vaq || []).push(arguments);
+                };
+            window.si =
+                window.si ||
+                function () {
+                    (window.siq = window.siq || []).push(arguments);
+                };
+        </script>
+        <script defer src="/_vercel/insights/script.js"></script>
+        <script defer src="/_vercel/speed-insights/script.js"></script>
+    </head>
+    <body>
+        <div class="bg-neutral-900 font-sans text-white font-normal h-100lvh">
+            <!-- HEADER -->
+            <header
+                class="flex fixed top-0 w-screen justify-between items-center h-20 py-1 px-8 bg-gradient-to-t from-transparent to-neutral-900 z-50"
+            >
+                <a href="#"><span class="font-medium text-4xl">nle</span></a>
+                <ul
+                    class="flex invisible sm:visible float-right font-light text-xl m-0 p-0"
+                >
+                    <li><a class="ml-4" href="#about">about</a></li>
+                    <li><a class="ml-4" href="#projects">projects</a></li>
+                    <li><a class="ml-4" href="#experience">experience</a></li>
+                    <li><a class="ml-4" href="#contact">contact</a></li>
                 </ul>
-                <ul>
-                    <li>
-                        java
-                        <img src="./assets/images/java-logo.png" height="32px">
-                    </li>
-                    <li>
-                        python
-                        <img src="./assets/images/python-logo.png" height="32px">
-                    </li>
-                    <li>
-                        sql
-                        <img src="./assets/images/sql-logo.png" height="32px">
-                    </li>
-                    <li>
-                        mongodb
-                        <img src="./assets/images/mongo-logo.svg" height="32px">
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        react
-                        <img src="./assets/images/react-logo.png" height="32px">
-                    </li>
-                    <li>
-                        node
-                        <img src="./assets/images/node-logo.png" height="32px">
-                    </li>
-                    <li>
-                        express
-                        <img src="./assets/images/express-logo.png" height="32px">
-                    </li>
-                    <li>
-                        docker
-                        <img src="./assets/images/docker-logo.png" height="32px">
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="page" id="contact">
-            <p class="fade-in">contact me</p>
-            <div class="contact-info-container">
-                <div class="contact-info">
-                    <img src="./assets/images/phone.png" width="50px">
-                    <p>(408) 888-1374</p>
-                </div>
-                <div class="contact-info">
-                    <a href="mailto:nicholasl.le224@gmail.com">
-                        <img src="./assets/images/email.png" width="50px">
-                    </a>
-                    <p>nicholasl.le224@gmail.com</p>
-                </div>
-                <div class="contact-info">
-                    <a href="https://linkedin.com/in/nicholasle04" target="_blank">
-                        <img src="./assets/images/linkedin.png" width="50px">
-                    </a>
-                    <p>nicholasle04</p>
+            </header>
+            <!-- LANDING -->
+            <div
+                class="flex flex-col pt-20 w-screen h-screen justify-center items-center"
+                id="home"
+            >
+                <p class="text-4xl mb-4">
+                    Hello, I am <span class="text-blue-500">Nicholas</span>
+                </p>
+                <div class="flex">
+                    <a href="./assets/Nicholas Le Resume.pdf" target="_blank"
+                        ><img src="./assets/images/resume.png" width="36px"
+                    /></a>
+                    <a
+                        href="https://linkedin.com/in/nicholasle04"
+                        target="_blank"
+                        ><img src="./assets/images/linkedin.png" width="36px"
+                    /></a>
+                    <a href="https://github.com/nicholasle04" target="_blank"
+                        ><img src="./assets/images/github.png" width="36px"
+                    /></a>
                 </div>
             </div>
+            <!-- line divider -->
+            <div class="w-auto mx-20 h-px bg-gray-700"></div>
+            <!-- ABOUT/HISTORY -->
+            <div class="w-screen mt-36 mb-36 px-10 md:px-40" id="about">
+                <p class="font-normal text-3xl mb-4">history of me</p>
+                <div class="">
+                    <ol
+                        class="relative border-s border-gray-200 dark:border-gray-700"
+                    >
+                        <li class="mb-10 ms-4">
+                            <div
+                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                            ></div>
+                            <time
+                                class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                                >2004</time
+                            >
+                            <div
+                                class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 p-4 rounded"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-gray-900 dark:text-white"
+                                >
+                                    I was born
+                                </h3>
+                                <p
+                                    class="text-base font-normal text-gray-500 dark:text-gray-400"
+                                >
+                                    First time being alive!
+                                </p>
+                            </div>
+                            <!-- <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"> -->
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9"
+                            />
+                        </li>
+                        <li class="mb-10 ms-4">
+                            <div
+                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                            ></div>
+                            <time
+                                class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                                >2012</time
+                            >
+                            <div
+                                class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 p-4 rounded"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-gray-900 dark:text-white"
+                                >
+                                    First exposure to software engineering
+                                </h3>
+                                <p
+                                    class="text-base font-normal text-gray-500 dark:text-gray-400"
+                                >
+                                    My teacher showed the class her husband's mobile
+                                    game and what made this memorable was how
+                                    awesome I thought he was for developing
+                                    something so seemingly complex.
+                                </p>
+                            </div> 
+                        </li>
+                        <li class="mb-10 ms-4">
+                            <div
+                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                            ></div>
+                            <time
+                                class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                                >2016</time
+                            >
+                            <div
+                                class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 p-4 rounded"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-gray-900 dark:text-white"
+                                >
+                                    First exposure to web development
+                                </h3>
+                                <p
+                                    class="text-base font-normal text-gray-500 dark:text-gray-400"
+                                >
+                                    I signed up for the Introduction to Programming
+                                    elective in Junior High which was my first time
+                                    developing a web app.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ms-4">
+                            <div
+                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                            ></div>
+                            <time
+                                class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                                >2016</time
+                            >
+                            <div
+                                class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 p-4 rounded"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-gray-900 dark:text-white"
+                                >
+                                    First exposure to web development
+                                </h3>
+                                <p
+                                    class="text-base font-normal text-gray-500 dark:text-gray-400"
+                                >
+                                    I signed up for the Introduction to Programming
+                                    elective in Junior High which was my first time
+                                    developing a web app.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- line divider -->
+            <div class="w-auto mx-20 h-px bg-gray-700"></div>
+            <!-- PROJECTS -->
+            <div class="w-screen mt-20 mb-20 px-10 md:px-40" id="projects">
+                <p class="font-normal text-3xl mb-4">projects</p>
+                <!-- PROJECT -->
+                <div
+                    class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 px-8 sm:px-16 py-8 rounded"
+                >
+                    <div class="flex flex-col itmes-center">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="flex-shrink w-full xl:w-7/12">
+                                <div
+                                    class="flex flex-col justify-between h-full"
+                                >
+                                    <div>
+                                        <h6 class="font-medium text-2xl mb-4">
+                                            weenverse
+                                        </h6>
+                                        <p class="mb-4">
+                                            A custom web application built for
+                                            famous streamer JasonTheWeen's
+                                            community. With over 3,500 users,
+                                            WeenVerse is a platform that allows
+                                            users to convert their Twitch
+                                            channel points into a virtual
+                                            currency called WeenBucks. Users can
+                                            then use their WeenBucks for various
+                                            community-based actions. Key
+                                            features include trading shares from
+                                            a mock stock market and placing bets
+                                            on events in future streams.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="flex flex-wrap">
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                typescript
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                python
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                sql
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                sveltekit
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                supabase
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                redis
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                docker
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50"
+                                                    disabled
+                                                >
+                                                    demo coming soon
+                                                </button></a
+                                            >
+                                            <a
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50"
+                                                    disabled
+                                                >
+                                                    view github
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/images/weenverse.png"
+                                class="border border-neutral-700 w-full xl:w-1/3 max-w-full object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT -->
+                <div
+                    class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 px-8 sm:px-16 py-8 rounded"
+                >
+                    <div class="flex flex-col itmes-center">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="flex-shrink w-full xl:w-7/12">
+                                <div
+                                    class="flex flex-col justify-between h-full"
+                                >
+                                    <div>
+                                        <h6 class="font-medium text-2xl mb-4">
+                                            classify
+                                        </h6>
+                                        <p class="mb-4">
+                                            A web application that allows SJSU
+                                            students to search for courses with
+                                            natural language rather than course
+                                            code. The semantic search is powered
+                                            by the
+                                            sentence-transformers/all-MiniLM-L12-v2
+                                            sentence embedding model and the
+                                            Zilliz Vector Database. The frontend
+                                            is hosted on Vercel and the backend
+                                            is self hosted on my Raspberry Pi
+                                            home server.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="flex flex-wrap">
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                javascript
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                python
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                react
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                fastapi
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                docker
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                nginx
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a
+                                                href="https://classify.nicholasle.me"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view demo
+                                                </button></a
+                                            >
+                                            <a
+                                                href="https://github.com/nicholasle04/classify"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view github
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/images/classify.png"
+                                class="border border-neutral-700 w-full xl:w-1/3 max-w-full object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT -->
+                <div
+                    class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 px-8 sm:px-16 py-8 rounded"
+                >
+                    <div class="flex flex-col itmes-center">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="flex-shrink w-full xl:w-7/12">
+                                <div
+                                    class="flex flex-col justify-between h-full"
+                                >
+                                    <div>
+                                        <h6 class="font-medium text-2xl mb-4">
+                                            sce tv
+                                        </h6>
+                                        <p class="mb-4">
+                                            SCE TV allows members of SCE to
+                                            remotely play YouTube videos on the
+                                            clubroom TV. It uses a Raspberry Pi
+                                            to receive an RTMP broadcast via VLC
+                                            Media Player and a FastAPI server
+                                            that manages the video stream. Users
+                                            communicate with the backend via a
+                                            simple HTML page and HTTP requests.
+                                            The backend is deployed on a server
+                                            using Docker and monitored with
+                                            Prometheus.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="flex flex-wrap">
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                python
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                html
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                css
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                javascript
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                fastapi
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                docker
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                prometheus
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50"
+                                                    disabled
+                                                >
+                                                    demo coming soon
+                                                </button></a
+                                            >
+                                            <a
+                                                href="https://github.com/sce-development/sce-tv"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view github
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/images/scetv.png"
+                                class="border border-neutral-700 w-full xl:w-1/3 max-w-full object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT -->
+                <div
+                    class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 px-8 sm:px-16 py-8 rounded"
+                >
+                    <div class="flex flex-col itmes-center">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="flex-shrink w-full xl:w-7/12">
+                                <div
+                                    class="flex flex-col justify-between h-full"
+                                >
+                                    <div>
+                                        <h6 class="font-medium text-2xl mb-4">
+                                            moogle gaps
+                                        </h6>
+                                        <p class="mb-4">
+                                            A React web application that allows
+                                            users to build out their own maps
+                                            and run different pathfinding
+                                            algorithms. Users can create roads
+                                            and buildings and find paths between
+                                            two points on the map. Buildings can
+                                            be set as obstacles and can create
+                                            traffic on nearby roads.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="flex flex-wrap">
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                html
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                css
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                javascript
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                react
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a
+                                                href="https://maps.nicholasle.me"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view demo
+                                                </button></a
+                                            >
+                                            <a
+                                                href="https://github.com/nicholasle04/moogle-gaps"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view github
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/images/moogle-gaps.png"
+                                class="border border-neutral-700 w-full xl:w-1/3 max-w-full object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT -->
+                <div
+                    class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 px-8 sm:px-16 py-8 rounded"
+                >
+                    <div class="flex flex-col itmes-center">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="flex-shrink w-full xl:w-7/12">
+                                <div
+                                    class="flex flex-col justify-between h-full"
+                                >
+                                    <div>
+                                        <h6 class="font-medium text-2xl mb-4">
+                                            uniplan calendar
+                                        </h6>
+                                        <p class="mb-4">
+                                            A full stack web application built
+                                            on the the MERN tech stack that
+                                            allows users to schedule events.
+                                            Users can create individual accounts
+                                            allowing them to manage their own
+                                            custom events which includes quick
+                                            and easy event creation and
+                                            deletion. Users can also quickly
+                                            switch between different timeframes
+                                            (day, week, month) to conveniently
+                                            view events.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="flex flex-wrap">
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                html
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                css
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                javascript
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                react
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                mongodb
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                node
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                express
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a
+                                                href="https://uniplan.nicholasle.me"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view demo
+                                                </button></a
+                                            >
+                                            <a
+                                                href="https://github.com/nicholasle04/calendar-app"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view github
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/images/uniplan.png"
+                                class="border border-neutral-700 w-full xl:w-1/3 max-w-full object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT -->
+                <div
+                    class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 px-8 sm:px-16 py-8 rounded"
+                >
+                    <div class="flex flex-col itmes-center">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="flex-shrink w-full xl:w-7/12">
+                                <div
+                                    class="flex flex-col justify-between h-full"
+                                >
+                                    <div>
+                                        <h6 class="font-medium text-2xl mb-4">
+                                            skilltree
+                                        </h6>
+                                        <p class="mb-4">
+                                            A platform to create and view just
+                                            skilltrees. Users who are familiar
+                                            with a particular skill can build
+                                            and submit their own tree, using
+                                            their real-world experience to
+                                            inform their decisions on how the
+                                            tree is structured. Or, they can use
+                                            generative AI to build a skilltree
+                                            for them, either as a base to
+                                            improve on or just to explore!
+                                            Developed at Calhacks 10.0.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="flex flex-wrap">
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                html
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                css
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                javascript
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                python
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                sql
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                react
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                fastapi
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                cockroachdb
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a
+                                                href="https://uniplan.nicholasle.me"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view demo
+                                                </button></a
+                                            >
+                                            <a
+                                                href="https://github.com/nicholasle04/calendar-app"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view github
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/images/skilltree.png"
+                                class="border border-neutral-700 w-full xl:w-1/3 max-w-full object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT -->
+                <div
+                    class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 px-8 sm:px-16 py-8 rounded"
+                >
+                    <div class="flex flex-col itmes-center">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="flex-shrink w-full xl:w-7/12">
+                                <div
+                                    class="flex flex-col justify-between h-full"
+                                >
+                                    <div>
+                                        <h6 class="font-medium text-2xl mb-4">
+                                            blockfish
+                                        </h6>
+                                        <p class="mb-4">
+                                            A basic chess engine with its name
+                                            derived from the infamous Stockfish
+                                            engine. Blockfish uses the minimax
+                                            algorithm to examine future
+                                            positions and determine the best
+                                            move at a particular position.
+                                            Optimizations include alpha-beta
+                                            pruning, move ordering, zobrist
+                                            hashing, and memoization.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="flex flex-wrap">
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                python
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50"
+                                                    disabled
+                                                >
+                                                    view demo
+                                                </button></a
+                                            >
+                                            <a
+                                                href="https://github.com/nicholasle04/blockfish"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view github
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/images/blockfish.png"
+                                class="border border-neutral-700 w-full xl:w-1/3 max-w-full object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT -->
+                <div
+                    class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 px-8 sm:px-16 py-8 rounded"
+                >
+                    <div class="flex flex-col itmes-center">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="flex-shrink w-full xl:w-7/12">
+                                <div
+                                    class="flex flex-col justify-between h-full"
+                                >
+                                    <div>
+                                        <h6 class="font-medium text-2xl mb-4">
+                                            vct stats discord bot
+                                        </h6>
+                                        <p class="mb-4">
+                                            A Discord bot that allows users to
+                                            search esports player and team
+                                            statistics within the Valorant
+                                            Champions Tour. The application
+                                            regularly scrapes multiple esports
+                                            stats pages and updates a local
+                                            mysql table with relevant
+                                            information. Using Discord.py, it
+                                            allows users to communicate with the
+                                            application and request information
+                                            via bot commands within servers.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="flex flex-wrap">
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                python
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                aws ec2
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                mysql
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                beautifulsoup
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50"
+                                                    disabled
+                                                >
+                                                    view demo
+                                                </button></a
+                                            >
+                                            <a
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded opacity-50"
+                                                    disabled
+                                                >
+                                                    view github
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/images/vct bot.png"
+                                class="border border-neutral-700 w-full xl:w-1/3 max-w-full object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT -->
+                <div
+                    class="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 mb-4 px-8 sm:px-16 py-8 rounded"
+                >
+                    <div class="flex flex-col itmes-center">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="flex-shrink w-full xl:w-7/12">
+                                <div
+                                    class="flex flex-col justify-between h-full"
+                                >
+                                    <div>
+                                        <h6 class="font-medium text-2xl mb-4">
+                                            portfolio website
+                                        </h6>
+                                        <p class="mb-4">
+                                            A portfolio website to present
+                                            myself to the internet :)
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="flex flex-wrap">
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                html
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                javascript
+                                            </div>
+                                            <div
+                                                class="bg-blue-500 py-1 px-4 mr-2 mb-4 rounded"
+                                            >
+                                                tailwind
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a
+                                                href="https://nicholasle.me"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view demo
+                                                </button></a
+                                            >
+                                            <a
+                                                href="https://github.com/nicholasle04/portfolio-website"
+                                                target="_blank"
+                                                ><button
+                                                    class="bg-blue-700 py-1 px-4 mr-2 mb-2 rounded"
+                                                >
+                                                    view github
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/images/portfolio.png"
+                                class="border border-neutral-700 w-full xl:w-1/3 max-w-full object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- line divider -->
+            <div class="w-auto mx-20 h-px bg-gray-700"></div>
+            <!-- EXPERIENCE -->
+            <div class="w-screen mt-20 mb-20 px-10 md:px-40" id="experience">
+                <p class="font-normal text-3xl mb-4">experience</p>
+                <ol class="sm:flex">
+                    <li class="relative sm:mb-0">
+                        <div class="flex items-center">
+                            <img src="./assets/images/cube3-logo.webp" class="z-10 flex items-center justify-center w-12 h-12 rounded-full ring-2 ring-gray-700 shrink-0"></img>
+                            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8 bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 m-4 px-8 py-6 rounded">
+                            <p class="block mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">SJSU Cube3 Satellite Club</p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Controls Team Member</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2023 - Present</time>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                        </div>
+                    </li>
+                    <li class="relative sm:mb-0">
+                        <div class="flex items-center">
+                            <img src="./assets/images/sce-logo.png" class="z-10 flex items-center justify-center w-12 h-12 rounded-full ring-2 ring-gray-700 shrink-0"></img>
+                            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8 bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 m-4 px-8 py-6 rounded">
+                            <div class="mt-3 sm:pe-8">
+                                <p class="block mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">SJSU Software and Computer Engineering Society</p>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Development Team Officer</h3>
+                                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2023 - Present</time>
+                                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                            </div>
+                            <div class="mt-3 sm:pe-8">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer Intern</h3>
+                                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">June 2023 - August 2023</time>
+                                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative sm:mb-0">
+                        <div class="flex items-center">
+                            <img src="./assets/images/sce-logo.png" class="z-10 flex items-center justify-center w-12 h-12 rounded-full ring-2 ring-gray-700 shrink-0"></img>
+                            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8 bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 m-4 px-8 py-6 rounded">
+                            <p class="block mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">San Jose State University</p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Research Assistant</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2023 - Present</time>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <!-- line divider -->
+            <div class="w-auto mx-20 h-px bg-gray-700"></div>
+            <!-- CONTACT -->
+            <div class="w-screen mt-20 pb-20 px-10 md:px-40" id="contact">
+                <p class="font-normal text-3xl mb-8">contact me</p>
+                <div class="flex flex-wrap justify-between">
+                    <div class="flex items-center">
+                        <img src="./assets/images/phone.png" width="50px" />
+                        <p class="ml-4">(408) 888-1374</p>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="mailto:nicholasl.le224@gmail.com">
+                            <img src="./assets/images/email.png" width="50px" />
+                        </a>
+                        <p class="ml-4">nicholasl.le224@gmail.com</p>
+                    </div>
+                    <div class="flex items-center">
+                        <a
+                            href="https://linkedin.com/in/nicholasle04"
+                            target="_blank"
+                        >
+                            <img
+                                src="./assets/images/linkedin.png"
+                                width="50px"
+                            />
+                        </a>
+                        <p class="ml-4">nicholasle04</p>
+                    </div>
+                </div>
+            </div>
+            <!-- SKILLS -->
+            <!-- <div class="page" id="skills">
+                <p>skills</p>
+                <div id="skill-table">
+                    <ul>
+                        <li>
+                            html
+                            <img src="./assets/images/html-logo.png" height="32px">
+                        </li>
+                        <li>
+                            css
+                            <img src="./assets/images/css-logo.png" height="32px">
+                        </li>
+                        <li>
+                            javascript
+                            <img src="./assets/images/js-logo.png" height="32px">
+                        </li>
+                        <li>
+                            git
+                            <img src="./assets/images/git-logo.png" height="32px">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            java
+                            <img src="./assets/images/java-logo.png" height="32px">
+                        </li>
+                        <li>
+                            python
+                            <img src="./assets/images/python-logo.png" height="32px">
+                        </li>
+                        <li>
+                            sql
+                            <img src="./assets/images/sql-logo.png" height="32px">
+                        </li>
+                        <li>
+                            mongodb
+                            <img src="./assets/images/mongo-logo.svg" height="32px">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            react
+                            <img src="./assets/images/react-logo.png" height="32px">
+                        </li>
+                        <li>
+                            node
+                            <img src="./assets/images/node-logo.png" height="32px">
+                        </li>
+                        <li>
+                            express
+                            <img src="./assets/images/express-logo.png" height="32px">
+                        </li>
+                        <li>
+                            docker
+                            <img src="./assets/images/docker-logo.png" height="32px">
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+            <footer class="bg-neutral-800"></footer>
         </div>
-        <footer>
-        </footer>
-    </div>
-</body>
+    </body>
 </html>
