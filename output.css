@@ -1,4 +1,82 @@
 /*
+ANIMATIONS
+*/
+.drop-in {
+  overflow: hidden;
+  animation: drop-in 1s ease-in-out 100ms backwards;
+}
+
+.fade-in {
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out 100ms backwards;
+}
+
+.fade-in-2 {
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out 150ms backwards;
+}
+
+.fade-in-3 {
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out 200ms backwards;
+}
+
+.fade-in-4 {
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out 250ms backwards;
+}
+
+.fade-in-5 {
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out 300ms backwards;
+}
+
+.fade-in-6 {
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out 350ms backwards;
+}
+
+.fade-in-7 {
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out 400ms backwards;
+}
+
+.fade-in-8 {
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out 450ms backwards;
+}
+
+.fade-in-9 {
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out 500ms backwards;
+}
+
+.fade-in-10 {
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out 550ms backwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+/*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
