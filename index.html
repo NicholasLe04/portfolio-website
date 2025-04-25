@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicholas Le</title>
     <link rel="stylesheet" href="./output.css" />
-
+    <script>document.documentElement.classList.add('js')</script>
     <script>
       window.va =
         window.va ||
@@ -25,7 +25,10 @@
     <div class="w-5/6 lg:w-2/3 mx-auto flex flex-col">
       <div class="bg-black fixed top-0 w-5/6 lg:w-2/3 h-16 mb-8">
         <nav class="flex items-center w-full h-16">
-          <div class="flex items-center justify-between w-full">
+          <div 
+            class="flex items-center justify-between w-full delay-[100ms] duration-[600ms] taos:translate-y-[-100%] taos:opacity-0" 
+            data-taos-offset="500"
+          >
             <div class="flex items-center">
               <p class="text-md">nicholas le</p>
             </div>
@@ -41,7 +44,7 @@
       <div class="flex flex-col gap-6">
 
         <div id="landing"class="flex items-center w-full py-16 mt-16">
-          <div class="flex gap-2 text-3xl">
+          <div class="flex gap-2 text-3xl delay-[100ms] duration-[600ms] taos:translate-y-[-25%] taos:opacity-0">
             <div>
               <span>nicholas le</span>
               <div class="flex gap-2">
@@ -51,9 +54,9 @@
           </div>
         </div>
         
-        <div class="w-full h-[1px] bg-gray-800 my-8"></div>
+        <div class="w-full h-[1px] bg-gray-800 my-8 delay-[100ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"></div>
 
-        <div id="about" class="w-full">
+        <div id="about" class="w-full delay-[100ms] duration-[600ms] taos:translate-y-[-25%] taos:opacity-0">
           <p class="mb-4">about</p>
           <div class="flex flex-col gap-4 text-sm text-gray-400">
             <p>
@@ -66,9 +69,9 @@
           </div>
         </div>
 
-        <div class="w-full h-[1px] bg-gray-800 my-8"></div>
+        <div class="w-full h-[1px] bg-gray-800 my-8 delay-[100ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"></div>
 
-        <div id="projects" class="w-full">
+        <div id="projects" class="w-full delay-[100ms] duration-[600ms] taos:translate-y-[-25%] taos:opacity-0">
           <p class="mb-4">projects</p>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <a href="https://streamerstocks.org/" target="_blank" class="flex flex-col gap-1">
@@ -118,9 +121,9 @@
           </div>
         </div>
 
-        <div class="w-full h-[1px] bg-gray-800 my-8"></div>
+        <div class="w-full h-[1px] bg-gray-800 my-8 delay-[100ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"></div>
 
-        <div id="experience" class="w-full">
+        <div id="experience" class="w-full delay-[100ms] duration-[600ms] taos:translate-y-[-25%] taos:opacity-0">
           <p class="mb-4">experience</p>
           <div class="flex flex-col gap-4 text-sm">
             <div>
@@ -150,9 +153,9 @@
           </div>
         </div>
         
-        <div class="w-full h-[1px] bg-gray-800 my-8"></div>
+        <div class="w-full h-[1px] bg-gray-800 my-8 delay-[100ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"></div>
 
-        <footer id="contact" class="w-full mb-16 flex flex-wrap justify-between">
+        <footer id="contact" class="w-full mb-16 flex flex-wrap justify-between delay-[100ms] duration-[600ms] taos:translate-y-[-100%] taos:opacity-0">
           <div class="flex gap-4 text-sm">
             <a href="https://www.linkedin.com/in/nicholasle04/" target="_blank" class="hover:text-gray-400">linkedin</a>
             <a href="https://github.com/nicholasle04" target="_blank" class="hover:text-gray-400">github</a>
@@ -162,5 +165,6 @@
         </footer>
       </div>
     </div>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
   </body>
 </html>
